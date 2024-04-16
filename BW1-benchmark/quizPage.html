@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="/assets/quizPage.css">
+</head>
+<body>
+    
+<div id="wrapper">
+    <header>
+        <div class="container">
+            <img id="logo" src="/assets/epicode_logo.png" alt="epicode_logo">
+            <div class="timerContainer">
+                <svg width="200px" height="200px">
+                    <circle class="base" cx="100" cy="100" r="80" stroke="grey" fill="transparent" stroke-width="10"/>
+                    <path id="timeRemaining"
+                    d="
+                      M 100, 100
+                      m 0, -80
+                      a 40, 40, 0 1,0 0, 160
+                      a 40, 40, 0 1,0 0, -160
+                      "
+                    />
+                </svg>
+                <span id="timer"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p class="question">
+        </p>  
+      
+        <div class="centeredContainer">
+            <div class="upperButtons">
+            </div>
+        </div>
+        
+        <div class="whatQuestion">
+            <p>QUESTION <span id="currentQuestion"></span><span id="maxQuestion"></span></p>
+        </div>
+    </main>
+</div>
+
+<script defer src="script.js"></script>
+</body>
+</html>
